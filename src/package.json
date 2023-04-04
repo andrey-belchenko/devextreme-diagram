@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "@devextreme/runtime": "3.0.11",
+    "devexpress-diagram": "2.1.72",
+    "devexpress-gantt": "4.1.42",
+    "devextreme": "22.2.5",
+    "devextreme-quill": "1.5.20",
+    "devextreme-react": "22.2.5",
+    "es6-object-assign": "1.1.0",
+    "inferno": "7.4.11",
+    "inferno-clone-vnode": "latest",
+    "inferno-compat": "latest",
+    "inferno-create-class": "latest",
+    "inferno-create-element": "7.4.11",
+    "inferno-dom": "latest",
+    "inferno-extras": "latest",
+    "inferno-hydrate": "7.4.11",
+    "jszip": "3.7.1",
+    "luxon": "1.28.0",
+    "prettier": "2.8.4",
+    "prop-types": "15.8.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "rrule": "2.6.4"
+  },
+  "description": "This demo shows the Diagram component's capability to load an external tree or a graph structure from two data sources: an array of shapes and an array of shape connectors. The connector is specified by the shape's ID attributes. The Diagram transforms information from the data sources into a tree layout view.\n",
+  "name": "Node and Edge Arrays - DevExtreme Diagram"
+}
