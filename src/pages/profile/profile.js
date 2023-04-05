@@ -5,7 +5,6 @@ import Diagram, {
   AutoLayout,
   Toolbox,
   Group,
-  CustomShape
 } from "devextreme-react/diagram";
 import ArrayStore from "devextreme/data/array_store";
 // import service from "./data.js";
@@ -35,7 +34,7 @@ class App extends React.Component {
           _id: "642c9d3580aad367263137c0",
           id: "6f88cb91-0a33-474c-89c7-d107c529f81d",
           text: null,
-          type: "custom-node",
+          type: "connector",
           width: 0.1,
           changedAt: "2023-04-04T21:57:09.074Z",
           batchId: "04 6743a453-f63d-4cc4-b814-497ef0bfe06e",
@@ -46,7 +45,7 @@ class App extends React.Component {
           _id: "642c9d3580aad367263137c1",
           id: "6d34975d-22d7-423a-801f-2a4063e7b0e1",
           text: null,
-          type: "custom-node",
+          type: "connector",
           width: 0.1,
           changedAt: "2023-04-04T21:57:09.074Z",
           batchId: "04 6743a453-f63d-4cc4-b814-497ef0bfe06e",
@@ -57,7 +56,7 @@ class App extends React.Component {
           _id: "642c9d3580aad367263137c2",
           id: "37d82962-1149-4cec-998e-0302fbbeffae",
           text: null,
-          type: "custom-node",
+          type: "connector",
           width: 0.1,
           changedAt: "2023-04-04T21:57:09.074Z",
           batchId: "04 6743a453-f63d-4cc4-b814-497ef0bfe06e",
@@ -83,6 +82,7 @@ class App extends React.Component {
           operationId: "e74f186c-7824-4d86-a9e8-fedc244832e4",
           text: "КТП 910",
           type: "rectangle",
+        
         },
         {
           _id: "642c9d3580aad367263137c9",
@@ -93,6 +93,7 @@ class App extends React.Component {
           operationId: "e74f186c-7824-4d86-a9e8-fedc244832e4",
           text: "КТП 909 dfsfs sf s f s f sfsfsf sfsfd rwr wrw r w rw r w r wr wr ",
           type: "rectangle",
+      
         },
       ],
     });
@@ -161,24 +162,13 @@ class App extends React.Component {
   render() {
     return (
       <Diagram id="diagram" className="grid">
-        <CustomShape
-          category="custom"
-          type="custom-node"
-          baseType="connector"
-          defaultWidth={0.1}
-          defaultHeight={0.1}
-          maxWidth={0.1}
-          maxHeight={0.1}
-          minWidth={0.1}
-          monHeight={0.1}
-        ></CustomShape>
         <Nodes
           dataSource={this.flowNodesDataSource}
           idExpr="id"
           typeExpr="type"
           textExpr="text"
-          // widthExpr={itemSizeExpr}
-          // heightExpr={itemSizeExpr}
+          widthExpr={itemSizeExpr}
+          heightExpr={itemSizeExpr}
         >
           <AutoLayout type="layered" />
         </Nodes>
