@@ -35,12 +35,11 @@
   "name": "node-and-edge-arrays-devextreme-diagram-forked",
   "version": "0.0.0",
   "devDependencies": {
-    "react-scripts": "1.0.0",
     "devextreme-cli": "1.3.3",
     "devextreme-themebuilder": "^22.2.5"
   },
   "scripts": {
-    "start":  "set PORT=3006 && react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
