@@ -19,9 +19,14 @@
     "luxon": "1.28.0",
     "prettier": "2.8.4",
     "prop-types": "15.8.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "rrule": "2.6.4"
+    "rrule": "2.6.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4",
+    "sass": "^1.34.1",
+    "react-router-dom": "^6.3.0",
+    "react-app-polyfill": "^1.0.0"
   },
   "description": "This demo shows the Diagram component's capability to load an external tree or a graph structure from two data sources: an array of shapes and an array of shape connectors. The connector is specified by the shape's ID attributes. The Diagram transforms information from the data sources into a tree layout view.\n",
   "name": "node-and-edge-arrays-devextreme-diagram-forked",
