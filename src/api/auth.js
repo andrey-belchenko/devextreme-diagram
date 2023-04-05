@@ -1,86 +1,35 @@
 import defaultUser from '../utils/default-user';
 
 export async function signIn(email, password) {
-  try {
-    // Send request
-    console.log(email, password);
+  console.log(email, password);
 
     return {
       isOk: true,
       data: defaultUser
     };
-  }
-  catch {
-    return {
-      isOk: false,
-      message: "Authentication failed"
-    };
-  }
 }
 
 export async function getUser() {
-  try {
-    // Send request
-
-    return {
-      isOk: true,
-      data: defaultUser
-    };
-  }
-  catch {
-    return {
-      isOk: false
-    };
-  }
+  return {
+    isOk: true,
+    data: defaultUser
+  };
 }
 
 export async function createAccount(email, password) {
-  try {
-    // Send request
-    console.log(email, password);
-
-    return {
-      isOk: true
-    };
-  }
-  catch {
-    return {
-      isOk: false,
-      message: "Failed to create account"
-    };
-  }
+  return {
+    isOk: true
+  };
 }
 
 export async function changePassword(email, recoveryCode) {
-  try {
-    // Send request
-    console.log(email, recoveryCode);
-
-    return {
-      isOk: true
-    };
-  }
-  catch {
-    return {
-      isOk: false,
-      message: "Failed to change password"
-    }
-  }
+  return {
+    isOk: true
+  };
 }
 
 export async function resetPassword(email) {
-  try {
-    // Send request
-    console.log(email);
-
-    return {
-      isOk: true
-    };
-  }
-  catch {
-    return {
-      isOk: false,
-      message: "Failed to reset password"
-    };
-  }
+  return {
+    isOk: true
+  };
 }

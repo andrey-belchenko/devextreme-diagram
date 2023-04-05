@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { SingleCard } from './layouts';
 import { LoginForm, ResetPasswordForm, ChangePasswordForm, CreateAccountForm } from './components';
-
+import React  from 'react';
 export default function UnauthenticatedContent() {
   return (
     <Routes>
