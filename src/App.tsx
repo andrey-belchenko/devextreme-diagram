@@ -11,7 +11,8 @@ import { useScreenSizeClass } from './utils/media-query';
 import Content from './Content';
 import UnauthenticatedContent from './UnauthenticatedContent';
 import { SegmentDiagram } from './pages/_index';
-import SegmentDiagramTest from './pages/SegmentDiagramTest';
+import SegmentDiagramTest from './SegmentDiagramTest';
+// import SegmentDiagramTest from './pages/SegmentDiagramTest';
 // const dotenv = require("dotenv");
 // dotenv.config();
 
